@@ -6,11 +6,13 @@ import Contact from './pages/Contact.jsx'
 import Country from './pages/Country.jsx'
 import About from './pages/About.jsx'
 import AppLayout from './components/AppLayout.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     path:'/',
     element:<AppLayout/>,
+    errorElement:<ErrorPage/>,
     children:[
       {
         path:'/',
