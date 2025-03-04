@@ -17,10 +17,10 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <ul className='hidden md:flex gap-7'>
-          <li className='hover:text-blue-500'><NavLink to='/'>Home</NavLink></li>
-          <li className='hover:text-blue-500'><NavLink to='/country'>Country</NavLink></li>
-          <li className='hover:text-blue-500'><NavLink to='/about'>About</NavLink></li>
-          <li className='hover:text-blue-500'><NavLink to='/contact'>Contact</NavLink></li>
+          <li className='hover:text-blue-500 font-bold'><NavLink to='/'>Home</NavLink></li>
+          <li className='hover:text-blue-500 font-bold'><NavLink to='/country'>Country</NavLink></li>
+          <li className='hover:text-blue-500 font-bold'><NavLink to='/about'>About</NavLink></li>
+          <li className='hover:text-blue-500 font-bold'><NavLink to='/contact'>Contact</NavLink></li>
         </ul>
         
         {/* Mobile Menu Button */}

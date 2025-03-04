@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "country": "United States",
+      "capital": "Washington, D.C.",
+      "population": 331002651,
+      "interesting_fact": "The United States has no official language at the federal level."
+    },
+    {
+      "id": 2,
+      "country": "Canada",
+      "capital": "Ottawa",
+      "population": 37742154,
+      "interesting_fact": "Canada has the longest coastline of any country in the world."
+    },
+    {
+      "id": 3,
+      "country": "China",
+      "capital": "Beijing",
+      "population": 1444216107,
+      "interesting_fact": "China is home to the world's largest high-speed rail network."
+    },
+    {
+      "id": 4,
+      "country": "India",
+      "capital": "New Delhi",
+      "population": 1393409038,
+      "interesting_fact": "India is the world's largest democracy by population."
+    },
+    {
+      "id": 5,
+      "country": "Brazil",
+      "capital": "Brasília",
+      "population": 212559417,
+      "interesting_fact": "Brazil is the only country in South America where Portuguese is the official language."
+    },
+    {
+      "id": 6,
+      "country": "Germany",
+      "capital": "Berlin",
+      "population": 83783942,
+      "interesting_fact": "Germany is known for having over 1,500 different types of sausages."
+    },
+    {
+      "id": 7,
+      "country": "Japan",
+      "capital": "Tokyo",
+      "population": 126476461,
+      "interesting_fact": "Japan has more than 6,800 islands."
+    },
+    {
+      "id": 8,
+      "country": "Australia",
+      "capital": "Canberra",
+      "population": 25499884,
+      "interesting_fact": "Australia is home to more kangaroos than people."
+    },
+    {
+      "id": 9,
+      "country": "France",
+      "capital": "Paris",
+      "population": 65273511,
+      "interesting_fact": "France is the most visited country in the world."
+    },
+    {
+      "id": 10,
+      "country": "United Kingdom",
+      "capital": "London",
+      "population": 67886011,
+      "interesting_fact": "The UK is home to the oldest underground railway system, the London Underground, which opened in 1863."
+    }
+  ]
+  
