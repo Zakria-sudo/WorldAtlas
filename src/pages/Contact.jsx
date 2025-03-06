@@ -14,7 +14,7 @@ const Contact = () => {
       <form onSubmit={handleForm} className='flex flex-col gap-8'>
         <input 
           type='text' 
-          name='username' 
+          name='username'   
           required 
           autoComplete='off' 
           placeholder='Enter your name' 

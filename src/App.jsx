@@ -7,33 +7,22 @@ import Country from './pages/Country.jsx'
 import About from './pages/About.jsx'
 import AppLayout from './components/AppLayout.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
-
+import CountryDetails from './pages/CountryDetails.jsx'
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<AppLayout/>,
-    errorElement:<ErrorPage/>,
-    children:[
-      {
-        path:'/',
-        element:<Home/>,
-        },
-        {
-        path:'country',
-        element:<Country/>,
-        },
-        {
-        path:'contact',
-        element:<Contact/>,
-        },
-        {
-        path:'about',
-        element:<About/>,
-        },
+    path: '/',
+    element: <AppLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      { path: '', element: <Home /> }, // ✅ Changed '/' to ''
+      { path: 'country', element: <Country /> },
+      { path: 'contact', element: <Contact /> },
+      { path: 'about', element: <About /> },
+      { path: 'country/:id', element: <CountryDetails /> },
     ],
   },
-    
-])
+]);
+
 function App() {
 
   return (
