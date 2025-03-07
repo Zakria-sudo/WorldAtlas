@@ -7,7 +7,7 @@ const CountryCard = ({ country }) => {
 
   return (
  
-<li className="border border-blue-500 rounded-lg shadow-lg bg-[#0D1117] text-white 
+<li className="border border-gray-500 rounded-lg shadow-lg bg-[#0D1117] text-white 
               transition-transform transform hover:scale-105 overflow-hidden max-w-sm">
   {/* Flag at the top */}
   <img src={flags.svg} className="w-full h-40 object-cover" alt="Country Flag" />

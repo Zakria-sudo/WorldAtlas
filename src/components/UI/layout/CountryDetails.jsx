@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useTransition } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import Loader from "../Loader";
 import { getCountry_IndvData } from "../../../api/postApi";
 
@@ -66,10 +66,13 @@ const CountryDetails = () => {
               {country.borders.length > 0 ? country.borders.join(", ") : "No bordering countries"}
             </p>
           </div>
-
         </div>
+    <NavLink to={'/country'}>
+                <button className="bg-gray-700 px-5 py-3 rounded font-bold hover:bg-gray-600 transition duration-300">Go back</button>
+    </NavLink>
       </div>
     </section>
+
   );
 };
 
