@@ -1,37 +1,34 @@
-import { useState } from 'react'
-import Navbar from './components/UI/Navbar.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './pages/Home.jsx'
-import Contact from './pages/Contact.jsx'
-import Country from './pages/Country.jsx'
-import About from './pages/About.jsx'
-import AppLayout from './components/AppLayout.jsx'
-import ErrorPage from './pages/ErrorPage.jsx'
-import CountryDetails from './pages/CountryDetails.jsx'
+import { useState } from "react";
+import Navbar from "./components/UI/Navbar.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Contact from "./pages/Contact.jsx";
+import Country from "./pages/Country.jsx";
+import About from "./pages/About.jsx";
+import AppLayout from "./components/UI/layout/AppLayout.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
+import CountryDetails from "./components/UI/layout/CountryDetails.jsx";
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <AppLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: '', element: <Home /> }, // ✅ Changed '/' to ''
-      { path: 'country', element: <Country /> },
-      { path: 'contact', element: <Contact /> },
-      { path: 'about', element: <About /> },
-      { path: 'country/:id', element: <CountryDetails /> },
+      { path: "", element: <Home /> }, // ✅ Changed '/' to ''
+      { path: "country", element: <Country /> },
+      { path: "contact", element: <Contact /> },
+      { path: "about", element: <About /> },
+      { path: "country/:id", element: <CountryDetails /> },
     ],
   },
 ]);
 
 function App() {
-
   return (
     <RouterProvider router={router}>
-    <>
-     
-    </>
+      <></>
     </RouterProvider>
-  )
+  );
 }
 
-export default App
+export default App;
