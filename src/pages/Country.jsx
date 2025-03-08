@@ -39,12 +39,19 @@ const Country = () => {
   );
 
   return (
-    <section>
-      <Searchfilter search={search} setsearch={setSearch} filter={filter} setfilter={setFilter} />
+    <section className="px-4 md:px-8 lg:px-12">
+      <Searchfilter 
+        search={search} 
+        setsearch={setSearch} 
+        filter={filter} 
+        setfilter={setFilter} 
+        countries={countries} 
+        setCountries={setCountries} 
+      />
       {isPending ? (
         <Loader />
       ) : (
-        <ul className='grid grid-cols-4 max-w-[90%] mx-auto gap-4'>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-[90%] mx-auto">
           {filterCountries.map((curCountry, index) => (
             <CountryCard country={curCountry} key={index} />
           ))}
