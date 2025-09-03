@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "", element: <Home /> }, // ✅ Changed '/' to ''
+      { path: "", element: <Home /> },
       { path: "country", element: <Country /> },
       { path: "contact", element: <Contact /> },
       { path: "about", element: <About /> },
